@@ -239,7 +239,7 @@ int main(int argc, char * argv[]) {
     // print result and return status code
     printf("sorted\n");
     return 101;
-  } else if ((argc == 2 && strcmp(argv[1], "-l")) == 0) {
+  } else if ((argc == 3 && strcmp(argv[1], "-l")) == 0) {
     // To sort lines
     char ** lines = NULL;
     const int buffer_size = 256;
@@ -322,5 +322,5 @@ int main(int argc, char * argv[]) {
   } else {
     return EXIT_FAILURE;
   }
-  // add code for other options here
+
 }
